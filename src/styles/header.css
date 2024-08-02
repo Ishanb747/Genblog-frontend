@@ -1,0 +1,147 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a2e;
+}
+
+.dark-mode {
+    --background-color: #1a1a2e; /* Dark blue background */
+    --header-background-color: #16213e; /* Darker blue for the header */
+    --text-color: #d3d3d3; /* Light gray text */
+    --title-color: #e94560; /* Light pinkish red */
+    --button-color: #533483; /* Purple */
+    --button-hover-color: #6f42c1; /* Slightly lighter purple */
+    --sign-in-color: #0f3460; /* Dark blue */
+    --sign-up-color: #e94560; /* Light pinkish red */
+    --icon-color: #e94560; /* Light pinkish red */
+}
+
+.light-mode {
+    --background-color: #1a1a2e; /* Dark blue background */
+    --header-background-color: #16213e; /* Darker blue for the header */
+    --text-color: #d3d3d3; /* Light gray text */
+    --title-color: #e94560; /* Light pinkish red */
+    --button-color: #533483; /* Purple */
+    --button-hover-color: #6f42c1; /* Slightly lighter purple */
+    --sign-in-color: #0f3460; /* Dark blue */
+    --sign-up-color: #e94560; /* Light pinkish red */
+    --icon-color: #e94560; /* Light pinkish
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header-background-color);
+    padding: 1rem;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+}
+
+.left h1 {
+    color: var(--title-color);
+    margin: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+
+#sign-in, #sign-up {
+    color: #ffffff;
+    width: 80px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#sign-in {
+    background-color: var(--sign-in-color);
+}
+
+#sign-up {
+    background-color: var(--sign-up-color);
+}
+
+#sign-in:hover, #sign-up:hover {
+    opacity: 0.8;
+}
+
+#home, #create-post {
+    border: none;
+    color: #ffffff;
+    background-color: var(--button-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#home:hover, #create-post:hover {
+    background-color: var(--button-hover-color);
+}
+
+#bright {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--icon-color);
+    transition: color 0.3s ease;
+}
+
+#bright:hover {
+    color: #ff6b81; /* Lighter pinkish red on hover */
+}
+
+.error-message {
+    color: #ff4d4d;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left, .right {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.loogo {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

@@ -1,0 +1,80 @@
+.single-post {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 3%;
+}
+
+.single-post h1 {
+    font-size: 2.5em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.single-post .post-meta {
+    font-size: 0.9em;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.single-post .post-content {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: black;
+}
+
+.single-post img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
+}
+
+.single-post blockquote {
+    border-left: 4px solid #ccc;
+    margin: 20px 0;
+    padding-left: 16px;
+    font-style: italic;
+    color: black;
+}
+
+.single-post pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: black;
+}
+
+.single-post code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.error-message {
+    color: #d32f2f;
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loading {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+    .single-post {
+        padding: 15px;
+    }
+
+    .single-post h1 {
+        font-size: 2em;
+    }
+
+    .single-post .post-content {
+        font-size: 1em;
+    }
+}
